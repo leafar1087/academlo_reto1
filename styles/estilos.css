@@ -1,0 +1,155 @@
+body{
+    
+    width: 100%;
+    max-width: 1440px;
+    min-width: 600px;
+    max-height: 900px;
+    min-height: 750px;
+    margin: auto;
+    overflow: hidden;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-color: hsl(225,100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    font-family: 'Red Hat Display', sans-serif;
+}
+.contenedor{
+    margin-top: 5rem;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-color: white;
+    
+    border-radius: 1rem;
+}
+
+.contenedor main{
+    /*margin-top: 10rem;*/
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contenedor main .title{
+    align-items: center;
+}
+
+.contenedor main .title h1{
+    color: hsl(223, 47%, 23%);
+}
+
+.contenedor main .title p{
+    color:  hsl(224, 23%, 55%);
+    /*font-style: oblique;*/
+    line-height: 1.5rem;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+.contenedor header img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.contenedor main .option-payment{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.5rem;
+    align-items: center;
+    height: 70px;
+}
+
+.contenedor main .option-payment img{
+    margin-left: 5px;
+}
+
+.contenedor main .option-payment .option .plan,
+.contenedor main .option-payment .option .price{
+    margin-right: 5rem;
+}
+
+.contenedor main .option-payment .option{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+
+.contenedor main .option-payment .option .plan{
+    margin-top: 0.5rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+.contenedor main .option-payment .option .price{
+    margin-bottom: 1rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+.contenedor main .option-payment .change{
+    margin-right: 1.5rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+.contenedor main .button #proceed{
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 0.5rem;
+    color: hsl(225, 100%, 94%);
+    font-weight: bold;
+    box-shadow: 1px 10px 10px rgba(56, 40, 224, 0.25);
+}
+
+.contenedor main .button #cancel{
+    font-weight: bolder;
+    color: hsl(224, 23%, 55%);
+}
+
+.contenedor footer{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor footer span{
+    margin-top: 0.5rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px){
+    body{
+    
+        width: 100%;
+        max-width: 375px;
+        min-width: 200px;
+        background: url("../images/pattern-background-mobile.svg");
+        background-color: hsl(225,100%, 94%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .contenedor{
+        margin-top: 9rem;
+        min-width: 350px;
+       
+    }
+}
+
